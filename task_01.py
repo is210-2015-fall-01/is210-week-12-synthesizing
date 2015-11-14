@@ -33,4 +33,3 @@ class NonZeroError(NumberError):
             None
     """
     pass
-
