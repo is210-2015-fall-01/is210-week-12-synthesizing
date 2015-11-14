@@ -6,7 +6,7 @@
 class CustomError(Exception):
     """A class called CustomError, with an argument of Exception."""
 
-    def __init__(self, cause):
+    def __init__(self, msg, cause):
         """A constructor for CustomError.
 
         Args:
@@ -17,3 +17,4 @@ class CustomError(Exception):
         """
         Exception.__init__(self)
         self.cause = cause
+        self.msg = msg
