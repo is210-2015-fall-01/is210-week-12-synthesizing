@@ -15,6 +15,6 @@ class NumberError(BaseError, TypeError):
     """A class, NumberError, subclassing BaseErrror"""
     pass
 
-class NonZero(NumberError):
+class NonZeroError(NumberError):
     """A class, NonZero, subclassing NumberError"""
     pass
