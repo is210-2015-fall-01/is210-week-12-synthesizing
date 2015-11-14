@@ -19,7 +19,7 @@ def exception_test(arg1, arg2, arg3):
         >>> exception_test(['apple'], 0,'p')
         False
         >>> exception_test(43, 1, 1)
-        True     
+	True
     """
     caught = False
     try:
@@ -27,4 +27,3 @@ def exception_test(arg1, arg2, arg3):
     except (TypeError, KeyError, IndexError):
         caught = True
     return caught
-    
