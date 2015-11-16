@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Custom exception class with debugging errors."""
 
+
 class CustomError(Exception):
     """Subclass. Exception."""
 
@@ -18,5 +19,5 @@ class CustomError(Exception):
             >>> print myerr.cause
             Messed up a lot!
         """
-        Exception.__init__(self)
+        msg = Exception.__init__(self, msg)
         self.cause = cause
