@@ -3,10 +3,11 @@
 """Task 03 module"""
 
 def exception_test(arg1, arg2, arg3):
+    """function docstring"""
     caught = False
     try:
         arg1[arg2].index(arg3)
-    except:
+    except (TypeError, LookupError):
         caught = True
 
     return caught
